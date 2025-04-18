@@ -8,6 +8,7 @@ import jakarta.persistence.GenerationType;
 
 /*https://dzone.com/articles/bounty-spring-boot-and-postgresql-database  */
 /*https://medium.com/@smhammad163/a-guide-to-seamlessly-connecting-postgresql-with-spring-boot-ae487f198d1b */
+/*mvn spring-boot:run */
 
 @Entity
 public class Employee {
