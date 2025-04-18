@@ -11,11 +11,12 @@ import com.mcfarland.demo.entity.Job;
 
 
 @Service
-public class JobService {
+public class JobService implements IJobService {
 
         @Autowired
 
     private JobRepository jobRepository;
+
 
     public List<Job> getAllJobs() {
 

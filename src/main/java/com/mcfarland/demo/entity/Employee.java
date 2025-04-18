@@ -22,6 +22,12 @@ public class Employee {
     private String employeeId;
     private String employeeEmail;
 
+    public String getEmployeeEmail() {
+        return employeeEmail;
+    }
+    public void setEmployeeEmail(String employeeEmail) {
+        this.employeeEmail = employeeEmail;
+    }
     public String getEmployeeName() {
         return employeeName;
     }

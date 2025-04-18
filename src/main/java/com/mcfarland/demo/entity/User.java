@@ -21,11 +21,11 @@ public class User {
     private String email;
 
     public Long getId() {
-        return id;
+        return employeeId;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setId(Long employeeId) {
+        this.employeeId = employeeId;
     }
 
     public String getUsername() {
