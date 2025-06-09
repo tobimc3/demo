@@ -3,6 +3,5 @@
 
  This is my demo project to link SpringBoot, postgressql, use Visual Studio for development and all the things.  
 
- Next question, what should the front end be? Or should it just be an API situation?
 
- Also, need to build more tests in.  
+The two docker files allow the spring code to be deployed in one container, while the postgres database is in a separate container.  
