@@ -15,6 +15,7 @@ services:
 
   db:
     image: postgres:16
+    container_name: postgres-db
     restart: always
     environment:
       POSTGRES_DB: mydb
