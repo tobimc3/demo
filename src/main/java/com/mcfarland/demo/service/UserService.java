@@ -30,5 +30,9 @@ public class UserService {
 
     // Include additional service methods as required
 
+    public void deleteUserById(Long id) {
+      userRepository.deleteById(id);
+    }   
+
 }
 
