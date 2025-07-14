@@ -7,20 +7,16 @@ services:
       - "8080:8080"
     depends_on:
       - db
-    environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/mydb
-      SPRING_DATASOURCE_USERNAME: myuser
-      SPRING_DATASOURCE_PASSWORD: mypass
-      SERVER_ADDRESS: "0.0.0.0"
+    env_file:
+      - .env
 
   db:
     image: postgres:16
     container_name: postgres-db
     restart: always
-    environment:
-      POSTGRES_DB: mydb
-      POSTGRES_USER: myuser
-      POSTGRES_PASSWORD: mypass
-      
+    env_file:
+      - .env
     ports:
       - "5432:5432"
+
+
